@@ -141,7 +141,29 @@
   <value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PERPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_MAPRED_HOME</value>
   </property>
   ```
+### Format HDFS NameNode
+  ```
+  hdfs namenode -format
+  ```
+### Start Hadoop Cluster
+  ```
+  start-all.sh
+  ```
+### Check running processes
+  ```
+  jps
+  ```
+### Access Hadoop UI from Browser
+Hadoop NameNode UI
+  ```
+  http://localhost:9870
+  ```
+YARN UI
+  ```
+  http://localhost:8088
+  ```
   
+
   
 
   
