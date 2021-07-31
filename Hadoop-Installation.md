@@ -64,7 +64,12 @@
   export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
   export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
   ```
-### 
+### Configure hadoop files
+  ## 1. hadoop-env.sh
+  Uncomment JAVA_HOME by removing # and modify it to
+  ```
+  JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+  ```
 
   
   
