@@ -81,7 +81,7 @@
   ```
   nano core-site.xml
   ```
-  paste the following code inside "<configuration>"
+  paste the following code inside configuration<>
   ```
   <property>
   <name>fs.default.name</name>
