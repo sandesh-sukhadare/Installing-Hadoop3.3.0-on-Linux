@@ -81,7 +81,7 @@
   ```
   nano core-site.xml
   ```
-  paste the following code inside <configuration>
+  paste the following code inside "<configuration>"
   ```
   <property>
   <name>fs.default.name</name>
@@ -89,7 +89,7 @@
   </property>
   ```
   ## 3. hdfs-site.xml
-  insert your username at line 1 & 10
+  Insert your username at line 7 & 11
   ```
   <property>
   <name>dfs.replication</name>
