@@ -89,6 +89,7 @@
   </property>
   ```
   ## 3. hdfs-site.xml
+  insert your username at line 1 & 10
   ```
   <property>
   <name>dfs.replication</name>
@@ -96,11 +97,11 @@
   </property>
   <property>
   <name>dfs.namenode.name.dir</name>
-  <value>/home/amit/hadoop-3.3.0/data/namenode</value>
+  <value>/home/<your_username>/Ecosystem/hadoop-3.3.0/data/namenode</value>
   </property>
   <property>
   <name>dfs.datanode.data.dir</name>
-  <value>/home/amit/hadoop-3.3.0/data/datanode</value>
+  <value>/home/<your_username>/Ecosystem/hadoop-3.3.0/data/datanode</value>
   </property>
   ```
 
