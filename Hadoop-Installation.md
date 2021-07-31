@@ -48,9 +48,13 @@
   ```
   nano ~/.bashrc
   ```
+  Add your username in HADOOP_HOME path
   ```
+  #java
+  export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+  
   #Hadoop Related Options
-  export HADOOP_HOME=/home/amit/hadoop-3.3.0
+  export HADOOP_HOME=/home/<"your_username">/Ecosystem/hadoop-3.3.0
   export HADOOP_INSTALL=$HADOOP_HOME
   export HADOOP_MAPRED_HOME=$HADOOP_HOME
   export HADOOP_COMMON_HOME=$HADOOP_HOME
@@ -60,6 +64,7 @@
   export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
   export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
   ```
+### 
 
   
   
