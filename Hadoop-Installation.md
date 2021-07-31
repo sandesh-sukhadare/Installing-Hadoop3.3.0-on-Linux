@@ -119,7 +119,6 @@
   nano yarn-site.xml
   ```
   ```
-  
   <property>
   <name>yarn.nodemanager.aux-services</name>
   <value>mapreduce_shuffle</value>
