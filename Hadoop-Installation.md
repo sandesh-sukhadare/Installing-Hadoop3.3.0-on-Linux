@@ -89,6 +89,21 @@
   </property>
   ```
   ## 3. hdfs-site.xml
+  ```
+  <property>
+  <name>dfs.replication</name>
+  <value>1</value>
+  </property>
+  <property>
+  <name>dfs.namenode.name.dir</name>
+  <value>/home/amit/hadoop-3.3.0/data/namenode</value>
+  </property>
+  <property>
+  <name>dfs.datanode.data.dir</name>
+  <value>/home/amit/hadoop-3.3.0/data/datanode</value>
+  </property>
+  ```
+
   
 
   
