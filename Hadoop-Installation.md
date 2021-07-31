@@ -64,12 +64,12 @@
   export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
   export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
   ```
-### Configure hadoop files
+## Configure hadoop files
   ``` 
   cd ~/Ecosystem/hadoop-3.3.0/etc/hadoop/
 
   ```
-  ## 1. hadoop-env.sh
+  ### 1. hadoop-env.sh
   ```
   nano hadoop-env.sh
   ```
@@ -77,7 +77,7 @@
   ```
   JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
   ```
-  ## 2. core-site.xml
+  ### 2. core-site.xml
   ```
   nano core-site.xml
   ```
@@ -88,7 +88,7 @@
   <value>hdfs://localhost:9000</value>
   </property>
   ```
-  ## 3. hdfs-site.xml
+  ### 3. hdfs-site.xml
   Insert your username at line 7 & 11
   ```
   <property>
@@ -104,6 +104,49 @@
   <value>/home/<your_username>/Ecosystem/hadoop-3.3.0/data/datanode</value>
   </property>
   ```
+### 4. mapred-site-xml
+  ```
+  nano mapred-site-xml
+  ```
+  ```
+  <property> 
+  <name>mapreduce.framework.name</name> 
+  <value>yarn</value> 
+  </property>
+  ```
+### 5. yarn-site.xml
+  ```
+  nano yarn-site.xml
+  ```
+  ```
+  
+  <property>
+  <name>yarn.nodemanager.aux-services</name>
+  <value>mapreduce_shuffle</value>
+  </property>
+  <property>
+  <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
+  <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+  </property>
+  <property>
+  <name>yarn.resourcemanager.hostname</name>
+  <value>127.0.0.1</value>
+  </property>
+  <property>
+  <name>yarn.acl.enable</name>
+  <value>0</value>
+  </property>
+  <property>
+  <name>yarn.nodemanager.env-whitelist</name>   
+  <value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PERPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_MAPRED_HOME</value>
+  </property>
+  ```
+  
+  
+
+  
+  
+
 
   
 
