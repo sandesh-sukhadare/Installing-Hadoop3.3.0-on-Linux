@@ -54,7 +54,7 @@
   export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
   
   #Hadoop Related Options
-  export HADOOP_HOME=/home/<"your_username">/Ecosystem/hadoop-3.3.0
+  export HADOOP_HOME=/home/"your_username"/Ecosystem/hadoop-3.3.0
   export HADOOP_INSTALL=$HADOOP_HOME
   export HADOOP_MAPRED_HOME=$HADOOP_HOME
   export HADOOP_COMMON_HOME=$HADOOP_HOME
@@ -97,11 +97,11 @@
   </property>
   <property>
   <name>dfs.namenode.name.dir</name>
-  <value>/home/<your_username>/Ecosystem/hadoop-3.3.0/data/namenode</value>
+  <value>/home/"your_username"/Ecosystem/hadoop-3.3.0/data/namenode</value>
   </property>
   <property>
   <name>dfs.datanode.data.dir</name>
-  <value>/home/<your_username>/Ecosystem/hadoop-3.3.0/data/datanode</value>
+  <value>/home/"your_username"/Ecosystem/hadoop-3.3.0/data/datanode</value>
   </property>
   ```
 ### 4. mapred-site-xml
