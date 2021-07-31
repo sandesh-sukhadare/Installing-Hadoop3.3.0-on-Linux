@@ -66,13 +66,24 @@
   ```
 ### Configure hadoop files
   ``` 
-  cd etc/hadoop
+  cd ~/Ecosystem/hadoop-3.3.0/etc/hadoop/
+
   ```
   ## 1. hadoop-env.sh
   Uncomment JAVA_HOME by removing # and modify it to (line 37)
   ```
   JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
   ```
+  ## 2. core-site.xml
+  paste the following code inside <configuration>
+  ```
+  <property>
+  <name>fs.default.name</name>
+  <value>hdfs://localhost:9000</value>
+  </property>
+  ```
+
+  
 
   
   
