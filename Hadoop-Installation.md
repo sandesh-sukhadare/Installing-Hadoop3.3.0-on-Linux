@@ -94,6 +94,9 @@
   </property>
   ```
   ### 3. hdfs-site.xml
+  ```
+  nano hdfs-site.xml
+  ```
   Insert your username at line 7 & 11
   ```
   <property>
@@ -111,7 +114,7 @@
   ```
 ### 4. mapred-site-xml
   ```
-  nano mapred-site-xml
+  nano mapred-site.xml
   ```
   ```
   <property> 
