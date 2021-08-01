@@ -1,5 +1,10 @@
 # Installing Hadoop on Linux (Ubuntu)
 
+### Update apt repo
+  ```
+  sudo apt get update
+  ```
+
 ### Install OpenJDK
   ```
   sudo apt install openjdk-8-jdk -y
