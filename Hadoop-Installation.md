@@ -69,6 +69,11 @@
   export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
   export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
   ```
+### Source .bashrc file
+  ```
+  source ~/.bashrc
+  ```
+  
 ## Configure hadoop files
   ``` 
   cd ~/Ecosystem/hadoop-3.3.0/etc/hadoop/
