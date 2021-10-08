@@ -2,7 +2,7 @@
 
 ### Update apt repo
   ```
-  sudo apt get update
+  sudo apt-get update
   ```
 
 ### Install OpenJDK
